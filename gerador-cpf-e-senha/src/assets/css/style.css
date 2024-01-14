@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root {
+    --primary-color:rgba(15, 106, 134, 1);
+    --primary-color-darker: rgba(9,48,56,1);
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'open sans', sans-serif;
+    font-size: 1.3em;
+    line-height:1.5em;
+
+
+}
+.container {
+    max-width: 1920px;
+    margin: 50px;
+    background:white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cpf-gerado {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+.senha-gerada {
+    font-size: 3em;
+    color: var(--primary-color-darker);
+    margin: 40px 0px;
+    line-height: 75px;
+
+}
+button {
+    display: block;
+    margin: 10px 640px;
+    font-size: 1em;
+}
+input[ type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
+.cpf {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+.senhas {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+.qtd-caracteres {
+    font-size: 40px 
+}
