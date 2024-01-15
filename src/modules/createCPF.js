@@ -1,4 +1,4 @@
-import ValidaCPF from './ValidaCPF';
+import ValueCPF from './ValueCPF';
 
 export default class GeraCPF {
   rand(min = 100000000, max = 999999999) {
@@ -14,12 +14,12 @@ export default class GeraCPF {
     );
   }
 
-  geraNovoCpf() {
+  createNewCPF() {
     const cpfSemDigito = this.rand();
-    const digito1 = ValidaCPF.geraDigito(cpfSemDigito);
-    const digito2 = ValidaCPF.geraDigito(cpfSemDigito + digito1);
-    const novoCpf = cpfSemDigito + digito1 + digito2;
-    return this.formatado(novoCpf);
+    const digito1 = ValueCPF.geraDigito(cpfSemDigito);
+    const digito2 = ValueCPF.geraDigito(cpfSemDigito + digito1);
+    const newCPF = cpfSemDigito + digito1 + digito2;
+    return this.formatado(newCPF);
   }
 }
 

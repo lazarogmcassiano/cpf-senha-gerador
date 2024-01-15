@@ -1,4 +1,4 @@
-import geraSenha, { senha2 } from './geradoresDeSenha';
+import passwordGenerator, { passWord } from './passwordGenerator';
 
 const senhaGerada = document.querySelector('.senha-gerada');
 const qtdCaracteres = document.querySelector('.qtd-caracteres');
@@ -8,14 +8,14 @@ const chkNumeros = document.querySelector('.chk-numeros');
 const chkSimbolos = document.querySelector('.chk-simbolos');
 const gerarSenha = document.querySelector('.gerar-senha');
 
-export default function formGeraSenha (){
+export default function formCheckPassword (){
   gerarSenha.addEventListener('click', () => {
     senhaGerada.innerHTML = gera();
   });
 };
 
 function gera() {
-  const senha = senha2(
+  const senha = passWord(
     qtdCaracteres.value,
     chkMaiusculas.checked,
     chkMinusculas.checked,
@@ -25,3 +25,4 @@ function gera() {
 
   return senha || 'Nada selecionado.';
 }
+
